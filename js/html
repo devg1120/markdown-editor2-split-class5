@@ -1,0 +1,186 @@
+    <header>
+      <div id="menu-items">
+	<!--
+        <div><a href="/">Markdown Live Preview</a></div>
+        -->
+        <label for="contents-select">ref</label>
+        &ensp;
+        <select id="contents-select">
+          <option value="---">----</option>
+        </select>
+        <div id="reset-button"><a href="#">Reset</a></div>
+        <div id="copy-button"><a href="#">Copy</a></div>
+        <div id="sync-button1">
+          <input type="checkbox" id="sync-scroll-checkbox1" /><label
+            for="sync-scroll-checkbox"
+            >Sync scroll</label
+          >
+        </div>
+        <div id="sync-button2">
+          <input type="checkbox" id="sync-scroll-checkbox2" /><label
+            for="sync-scroll-checkbox"
+            >Sync scroll</label
+          >
+        </div>
+        <div id="sync-button3">
+          <input type="checkbox" id="sync-scroll-checkbox3" /><label
+            for="sync-scroll-checkbox"
+            >Sync scroll</label
+          >
+        </div>
+        &ensp; &ensp;
+        <!--
+	    <input type="file" id="openfile">
+	     -->
+        <button id="openfile">Open File</button>
+        &ensp;
+        <label id="filename">....</label>
+        &ensp;
+        <button id="savefile">Seve File</button>
+        &ensp;
+        <button id="saveAsfile">Seve As File</button>
+        &ensp; &ensp; &ensp;
+        <button id="tocSwtch">toc</button>
+	<label >
+		  <input id="tocToggle" type="checkbox" value="show" checked>toc
+	</label>
+        &ensp; &ensp; &ensp;
+        <input type="number" id="fontsize-number" name="fontsize" min="16" max="40" value="20"/>
+        &ensp; &ensp; &ensp;
+        <button id="schemeToggle">Dark</button>
+        &ensp;
+        <button id="keybindChange">none</button>
+        &ensp;
+        <button id="swap">swap</button>
+        &ensp; &ensp;
+        <label>split</label>
+        &ensp;
+        <select name="split" id="split-select">
+          <option value="">0</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        &ensp;
+        <label for="cursor-color-select">cursor</label>
+        &ensp;
+	<input type="color" id="cursor-color-select" name="body" value="#f6b73c" />
+        &ensp;
+        <label for="separator-color-select">separator</label>
+        &ensp;
+	<input type="color" id="separator-color-select" name="body" value="#FF8000" />
+      </div>
+      <div id="github">
+        <a href="https://github.com/tanabe/markdown-live-preview"
+          ><img src="image/GitHub-Mark-Light-32px.webp"
+        /></a>
+      </div>
+    </header>
+
+    <main data-flex-splitter-vertical  style="flex: auto">
+      <div
+        data-flex-splitter-horizontal
+        id="container1"
+        class="container"
+        style="flex: auto"
+      >
+        <div id="toc1" class="toc dark" style="flex: auto">
+
+          <!---------------------------->
+          <nav aria-label="Mythical University">
+          </nav>
+          <!---------------------------->
+        </div>
+
+        <div id="toc-separator1" role="separator" tabindex="1" class="separator"></div>
+
+        <div id="edit1" class="edit column" style="flex: auto">
+          <div id="editor-wrapper1" class="editor-wrapper">
+            <div id="editor1"></div>
+          </div>
+        </div>
+
+        <div role="separator" tabindex="1" class="separator"></div>
+
+        <div id="preview1" class="preview column dark" style="width: 50%">
+          <div id="preview-wrapper1" class="preview-wrapper dark">
+            <div id="output1" class="content markdown-body dark"></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        role="separator"
+        tabindex="1"
+        class="separator hide"
+        id="separator2"
+      ></div>
+
+      <div
+        data-flex-splitter-horizontal
+        id="container2"
+        class="container hide"
+        style="flex: auto; height: 30%"
+      >
+        <div id="toc2" class="toc dark" style="flex: auto">
+
+          <!---------------------------->
+          <nav aria-label="Mythical University">
+          </nav>
+          <!---------------------------->
+        </div>
+
+        <div id="toc-separator2" role="separator" tabindex="1" class="separator"></div>
+
+        <div id="edit2" class="edit column" style="flex: auto">
+          <div id="editor-wrapper2" class="editor-wrapper">
+            <div id="editor2"></div>
+          </div>
+        </div>
+
+        <div role="separator" tabindex="1" class="separator"></div>
+
+        <div id="preview2" class="preview column dark" style="width: 50%">
+          <div id="preview-wrapper2" class="preview-wrapper dark">
+            <div id="output2" class="content markdown-body dark"></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        role="separator"
+        tabindex="1"
+        class="separator hide"
+        id="separator3"
+      ></div>
+
+      <div
+        data-flex-splitter-horizontal
+        id="container3"
+        class="container hide"
+        style="flex: auto; height: 30%"
+      >
+        <div id="toc3" class="toc dark" style="flex: auto">
+
+          <!---------------------------->
+          <nav aria-label="Mythical University">
+          </nav>
+          <!---------------------------->
+        </div>
+
+        <div id="toc-separator3" role="separator" tabindex="1" class="separator"></div>
+
+        <div id="edit3" class="edit column" style="flex: auto">
+          <div id="editor-wrapper3" class="editor-wrapper">
+            <div id="editor3"></div>
+          </div>
+        </div>
+
+        <div role="separator" tabindex="1" class="separator"></div>
+
+        <div id="preview3" class="preview column dark" style="width: 50%">
+          <div id="preview-wrapper3" class="preview-wrapper dark">
+            <div id="output3" class="content markdown-body dark"></div>
+          </div>
+        </div>
+      </div>
+    </main>
