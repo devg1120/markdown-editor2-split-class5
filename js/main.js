@@ -10,9 +10,11 @@ let mp2 = new MarkDownPanel(base2);
 mp2.init();
 */
 let mp1 = new MarkDownPanel("#markdown-editor1");
-mp1.init();
+mp1.init("content1");
 
 let mp2 = new MarkDownPanel("#markdown-editor2");
-mp2.init();
+mp2.init("content2");
 
+let mp3 = new MarkDownPanel("#markdown-editor3");
+mp3.init("content3");
 

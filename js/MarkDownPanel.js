@@ -951,7 +951,7 @@ export class MarkDownPanel {
         this.saveLastContent(value);
     }
 
-    init() {
+    init(content) {
         this.contents = new Contents();
 
         let names = this.contents.getNamelist();
@@ -996,7 +996,8 @@ export class MarkDownPanel {
             "output1",
         );
         //editor1.presetValue(defaultInput);
-        this.editor1.presetValue(this.contents.getContent("content1"));
+        //this.editor1.presetValue(this.contents.getContent("content1"));
+        this.editor1.presetValue(this.contents.getContent(content));
         this.contents_select.options[1].selected = true;
 
         let scrollBarSettings = this.loadScrollBarSettings() || false;
